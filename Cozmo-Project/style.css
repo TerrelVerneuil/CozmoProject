@@ -41,3 +41,42 @@ body{
     background-color: #66FCF1;
     color: black;
   }
+  #goals{
+    padding-top: 20vh; 
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
+.is-visible {
+    opacity: 1;
+}
+
+.centered-list-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+}
+
+.centered-list {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  max-width: 600px; /* Adjust this value as needed */
+}
+
+.centered-list li::before {
+  content: "- "; /* Adds a hyphen before each list item */
+}
+.centered-text-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+}
+
+.centered-text {
+  max-width: 600px; /* Adjust this value based on your content width requirements */
+}
