@@ -6,6 +6,8 @@ body{
 .topnav {
     background-color: #141619;
     overflow: hidden;
+    position: fixed;
+    top: 0;
   }
 .paragraphs{
     width:18em;
@@ -21,6 +23,12 @@ body{
 .names{
     text-align: center;
 }
+#documentation{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -30,9 +38,16 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
+
   }
   
-  
+  .bodytext{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .topnav a:hover {
     background-color: #66FCF1;
     color: black;

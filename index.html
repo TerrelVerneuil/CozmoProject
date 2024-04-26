@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anki Cozmo</title>
 </head>
 <body>
     
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
-        <a href="#documentation">Documentation</a>
-        <a href="#goals">Goals</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="goals.html">Goals</a>
         <a href="https://github.com" target="_blank">Source Code</a>
       </div> 
     <br />
+    <div class="bodytext">
     <img src="robot.png" width="200" height="200" style="display: block;
     margin-left: auto;
     margin-right: auto;
@@ -26,53 +27,9 @@
     <p>CS371 Spring 2024</p>
     <p>Authors: Jake Dressler, Mike Dolan, Connor Whitlow, Joe Hillesland, Terrel Verneuil, Giorgi Paresishvili</p>
     </div>
+    </div>
     
-    <div>
-        
     
-    <br />
-    </div>
-    <br />
-    <div id="goals" class="fade-in" style="text-align: center;">
-       
-        <h3 style="text-align: center; text-decoration: underline;">Introduction: </h3>
-    <br/>
-    <div class="centered-text-container">
-        <div class="centered-text">
-    <p>By using the <b>Anki Cozmo robotics platform</b>, We will simulate the Kidnapped Robot Problem, using
-        an implementation of Monte Carlo Localization. By using the Anki Cozmo Robot it should figure 
-        out where it is, and based on the culmination of its rotation and location data, the robot should 
-        be able to familiarize itself with its environment, and figure out where it is after being “Kidnapped”.</p>
-    </div>
-    </div>
-        <img src="200w.gif" width="400" height="300" style="display: block;
-        margin-left: auto;
-        margin-right: auto;
-        "> 
-        <h3 style="text-align: center; text-decoration: underline;">Project Goals</h3>
-        <div class="centered-list-container">
-            <ul class="centered-list">
-                <li>Understand previous implementations of the project.</li>
-                <li>Implement Monte Carlo Localization based on these references.</li>
-                <li>Simulate the Kidnapped Robot Problem.</li>
-                <li>Use an Anki Cozmo Robot to demonstrate Monte Carlo Localization.</li>
-                <li>Collect rotation and location data to help the robot familiarize itself with its environment.</li>
-                <li>Enable the robot to determine its location after being “kidnapped.”</li>
-                <li>Improve upon previous implementations of the Kidnapped Robot Problem.</li>
-            </ul>
-        </div>
-        <div id="documentation" class="fade-in" style="text-align: center;">
-            <h3 style="text-align: center; text-decoration: underline;">Materials Needed</h3>
-            <div class="centered-list-container">
-                <ul class="centered-list">
-                    <li>1x Anki Cozmo Robot</li>
-                    <li>1x Android Phone</li>
-                    <li>1x Computer with software below</li>
-                    <li>1x Micro USB or USB C cable to connect to the computer</li>
-                </ul>
-            </div>
-        </div>
-    </div>
     
     <!-- </div> -->
     <script>
@@ -93,9 +50,9 @@
             document.querySelectorAll('#goals').forEach((section) => {
                 observer.observe(section);
             });
-            document.querySelectorAll('#documentation').forEach((section) => {
-                observer.observe(section);
-            });
+           // document.querySelectorAll('#documentation').forEach((section) => {
+         //       observer.observe(section);
+       //     });
         });
         </script>
     </body>
