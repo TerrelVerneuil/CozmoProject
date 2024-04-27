@@ -1,7 +1,13 @@
 body{
     background-color: #0B0C10;
-    color: #66FCF1;
-    
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+#net{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 .topnav {
     background-color: #141619;
@@ -32,14 +38,18 @@ body{
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0;
     text-decoration: none;
-    font-size: 17px;
-    
-
+    color: white;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .topnav a:hover, .topnav a:active, .topnav a:focus {
+    background-color: grey;
+    color: black;
   }
   
   .bodytext{
