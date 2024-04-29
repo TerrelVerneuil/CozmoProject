@@ -1,1 +1,1 @@
-**https://terrelverneuil.github.io/CozmoProject/
+https://terrelverneuil.github.io/CozmoProject/
