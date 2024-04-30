@@ -81,7 +81,9 @@ body{
 .is-visible {
     opacity: 1;
 }
-
+.bodytext{
+  backdrop-filter: blur(4px);
+}
 .centered-list-container {
   display: flex;
   justify-content: center;
