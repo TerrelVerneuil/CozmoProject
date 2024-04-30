@@ -1,7 +1,7 @@
 body{
     background-color: #0B0C10;
     color: white;
-    text-shadow: 4px 4px 4px #000000;
+    /* text-shadow: 4px 4px 4px #000000; */
 }
 #net{
   width: 100%;
@@ -87,6 +87,8 @@ body{
   justify-content: center;
   text-align: left;
   width: 100%;
+  backdrop-filter: blur(4px);
+  
 }
 
 .centered-list {
@@ -103,6 +105,7 @@ body{
   justify-content: center;
   text-align: left;
   width: 100%;
+  backdrop-filter: blur(4px);
 }
 
 .centered-text {
