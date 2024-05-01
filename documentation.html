@@ -52,10 +52,10 @@
         <h3 style="text-align: center; top: 100%; text-decoration: underline;color: black; background-color: #66FCF1">Improvements</h3>
         <div class="centered-list-container">
             <ul class="centered-list">
-                <li>Image compression has improved speed of localization from original code by approximately 20s, bringing the average down from around 140 seconds to 45 seconds. This is a 32% improvement.</li>
-                <li>In the worst case of the original code, localization took 5 minutes. The worst case we have observed since completing changes is 1 minute.</li>
+                <li>Image downscaling has improved speed of localization from the original code by approximately 60s, bringing the average down from around 105 seconds to 45 seconds. This is a 32% improvement.</li>
+                <li>In the worst case of the original code, localization took about 5 minutes. The worst case we have observed since completing changes is just over 1 minute.</li>
                 <li>When running the original code, the robot would tilt his head up while collecting pictures, but not while localizing. We made it so he tilts his head while localizing, so there is less variance between images taken from the same angle.</li>
-                <li>Threshold modification has increased certainty from an average of ~40% to an average of ~80%</li>
+                <li>Threshold modification to increase certainty from 40% to 80% has appeared to increase accuracy.</li>
                 <li>The robot now sings "Ode to Joy" upon localizing</li>
                 <li>The robot now displays its home image on its OLED display upon localization</li>
             </ul>
@@ -68,6 +68,8 @@
                 <li>Image hashing has the potential to resize images with superior efficiency</li>
                 <li>Before we began downsizing images, we saw success in the speed of localization by splicing the arrays which represented the images so that only the top half of each image was compared. This did come with accuracy drawbacks, although we forgot to experiment with the confidence threshold before moving on from this approach. A future group could try only commiting half of the images to the array, and then adjusting the confidence threshold to adjust for the increased susceptibility to errorerror.</li>
                 <li>While collecting images, the robot typically moves a couple centimeters off of its original point. Although rotate is in the Cozmo library, a group could add some code after the robot is done taking pictures to put it closer to its start point. This may increase accuracy and allow it to obtain higher certainity faster, improving speed as well. This group would also have to be careful to place the robot back down exactly where it began though, or else the improved accuracy on rotation would not actually reduce error.</li>
+                <li>Changing the number of photos taken in collection could improve localization, although it would come with a drawback on time to collect photos. To make the entire process run faster, this number could be experimented with.</li>
+                <li>Image annotation in the Cozmo library has the capacity to downsize images as well, this approach could yield faster downsizing and additional resampling. The comparisons may be simpler and more accurate as well. It would also remove the need to change image type.</li>
             </ul>
         </div>
     </div>
