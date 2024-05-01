@@ -40,9 +40,11 @@
         <h3 style="text-align: center; top: 100%; text-decoration: underline;color: black; background-color: #66FCF1">Improvements</h3>
         <div class="centered-list-container">
             <ul class="centered-list">
-                <li>Image compression has improved speed of localization from original code by approximately 20s, bringing the average down from 70 seconds to 50 seconds. This is a 28% improvement.</li>
+                <li>Image compression has improved speed of localization from original code by approximately 20s, bringing the average down from around 140 seconds to 45 seconds. This is a 32% improvement.</li>
+                <li>In the worst case of the original code, localization took 5 minutes. The worst case we have observed since completing changes is 1 minute.</li>
+                <li>When running the original code, the robot would tilt his head up while collecting pictures, but not while localizing. We made it so he tilts his head while localizing, so there is less variance between images taken from the same angle.</li>
                 <li>Threshold modification has increased certainty from an average of ~40% to an average of ~80%</li>
-                <li></li>
+                <li>The robot now sings "Ode to Joy" upon localizing</li>
             </ul>
         </div>
         <h3 style="text-align: center; top: 100%; text-decoration: underline;color: black; background-color: #66FCF1">Histograms</h3>
