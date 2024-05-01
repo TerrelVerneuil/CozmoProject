@@ -57,9 +57,19 @@
                 <li>When running the original code, the robot would tilt his head up while collecting pictures, but not while localizing. We made it so he tilts his head while localizing, so there is less variance between images taken from the same angle.</li>
                 <li>Threshold modification has increased certainty from an average of ~40% to an average of ~80%</li>
                 <li>The robot now sings "Ode to Joy" upon localizing</li>
+                <li>The robot now displays its home image on its OLED display upon localization</li>
+            </ul>
+            
+        </div>
+        <h3 style="text-align: center; top: 100%; text-decoration: underline;color: black; background-color: #66FCF1">For Future Groups</h3>
+        <div class="centered-list-container">
+            <ul class="centered-list">
+                <li>We are currently downsizing images to 2/3 of their original size, and our threshold for certainty is set to 80%. In the future, these numbers could be changed around to try to find an optimal combination.</li>
+                <li>Image hashing has the potential to resize images with superior efficiency</li>
+                <li>Before we began downsizing images, we saw success in the speed of localization by splicing the arrays which represented the images so that only the top half of each image was compared. This did come with accuracy drawbacks, although we forgot to experiment with the confidence threshold before moving on from this approach. A future group could try only commiting half of the images to the array, and then adjusting the confidence threshold to adjust for the increased susceptibility to errorerror.</li>
+                <li>While collecting images, the robot typically moves a couple centimeters off of its original point. Although rotate is in the Cozmo library, a group could add some code after the robot is done taking pictures to put it closer to its start point. This may increase accuracy and allow it to obtain higher certainity faster, improving speed as well. This group would also have to be careful to place the robot back down exactly where it began though, or else the improved accuracy on rotation would not actually reduce error.</li>
             </ul>
         </div>
-       
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
