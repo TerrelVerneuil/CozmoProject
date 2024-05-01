@@ -30,10 +30,10 @@ body{
     text-align: center;
 }
 #documentation{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50px;
+ 
+  /* transform: translate(-50%, -50%); */ 
 }
   
   /* Style the links inside the navigation bar */
@@ -45,6 +45,7 @@ body{
     color: white;
     background-color: black;
     text-align: center;
+    
   }
   
   .topnav a:hover, .topnav a:active, .topnav a:focus {
