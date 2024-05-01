@@ -45,10 +45,7 @@
         <div class="centered-list-container">
          
         </div>
-        <h3 style="text-align: center; top: 100%; text-decoration: underline;color: black; background-color: #66FCF1">Conclusions</h3>
-        <div class="centered-list-container">
-         
-        </div>
+        
         <h3 style="text-align: center; top: 100%; text-decoration: underline;color: black; background-color: #66FCF1">Improvements</h3>
         <div class="centered-list-container">
             <ul class="centered-list">
@@ -70,6 +67,15 @@
                 <li>While collecting images, the robot typically moves a couple centimeters off of its original point. Although rotate is in the Cozmo library, a group could add some code after the robot is done taking pictures to put it closer to its start point. This may increase accuracy and allow it to obtain higher certainity faster, improving speed as well. This group would also have to be careful to place the robot back down exactly where it began though, or else the improved accuracy on rotation would not actually reduce error.</li>
                 <li>Changing the number of photos taken in collection could improve localization, although it would come with a drawback on time to collect photos. To make the entire process run faster, this number could be experimented with.</li>
                 <li>Image annotation in the Cozmo library has the capacity to downsize images as well, this approach could yield faster downsizing and additional resampling. The comparisons may be simpler and more accurate as well. It would also remove the need to change image type.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; top: 100%; text-decoration: underline;color: black; background-color: #66FCF1">Conclusions</h3>
+        <div class="centered-list-container">
+          <ul class="centered-list">
+                <li>Downscaling images is very effective in improving the speed of image comparisons.</li>
+                <li>Changing the certainty threshold seems necessary if you implement downscaling.</li>
             </ul>
         </div>
     </div>
