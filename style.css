@@ -30,8 +30,12 @@ body{
     text-align: center;
 }
 #documentation{
-  position: absolute;
+  position: relative;
   top: 50px;
+
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
  
   /* transform: translate(-50%, -50%); */ 
 }
