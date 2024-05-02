@@ -91,7 +91,7 @@
                 <li>Changing the certainty threshold seems necessary if you implement downscaling.</li>
             </ul>
         </div>
-    </div>
+    
     </div>
 
 
@@ -111,6 +111,21 @@
             color: 0xff3b6, // Example: change the primary color (use hexadecimal values)
             backgroundColor: 0x0B0C10
         })
+    </script>
+    <script>
+        
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector(".topnav").style.top = "0";
+        } else {
+            document.querySelector(".topnav").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    } 
+</script>
+
     </script>
 </body>
 
